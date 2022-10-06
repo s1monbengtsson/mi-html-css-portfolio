@@ -4,8 +4,90 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Portfolio s1monbengtsson</title>
 		<link rel="stylesheet" href="scss/main.css" />
+		<script src="https://use.fontawesome.com/5e20692873.js"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600;700&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
-	<body></body>
+	<body>
+		<!-- Header section -->
+		<header>
+			<nav class="navbar__container">
+				<div class="navbar__logo">
+					<h2>s1monbengtsson</h2>
+				</div>
+				<div class="navbar__bars">
+					<i class="fa-solid fa-bars"></i>
+				</div>
+				<div class="navbar__menu">
+					<ul>
+						<li><a class="navbar__menu--links" href="#">View Projects</a></li>
+						<li><a class="navbar__menu--links" href="#">Skills</a></li>
+						<li><a class="navbar__menu--links" href="#">About Me</a></li>
+						<li><a class="navbar__menu--links" href="#">Resume</a></li>
+						<li><a class="navbar__menu--links" href="#">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<!-- Hero section -->
+		<main class="hero">
+			<div class="hero__container">
+				<div class="hero__container--left">
+					<div class="hero__container--heading">
+						<h1>Hi! I'm <span>Simon</span></h1>
+					</div>
+					<div class="hero__container--description">
+						<p>
+							...And I'm a 24 years old Front End student located in Malmo,
+							Sweden.
+						</p>
+					</div>
+				</div>
+				<div class="hero__container--right">
+					<img
+						class="hero__container--img"
+						src="images/Developer(2).svg"
+						alt="person coding"
+					/>
+				</div>
+
+				<i class="fa-solid fa-circle-arrow-down"></i>
+			</div>
+		</main>
+
+		<section class="explore__container">
+			<div class="explore__container--heading">
+				<h2>This Is Me</h2>
+			</div>
+			<div class="explore__container--cards">
+				<div class="explore__projects">
+					<h3>View Projects</h3>
+				</div>
+
+				<div class="explore__skills">
+					<h3>Skills</h3>
+				</div>
+
+				<div class="explore__about">
+					<h3>About Me</h3>
+					<p>I'm a 24 years old Front End student located in Malmo, Sweden.</p>
+				</div>
+
+				<div class="explore__resume">
+					<h3>Resume</h3>
+				</div>
+
+				<div class="explore__contact">
+					<h3>Get In Touch</h3>
+				</div>
+			</div>
+		</section>
+	</body>
 </html>
