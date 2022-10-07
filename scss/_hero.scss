@@ -1,0 +1,33 @@
+.hero {
+	&__container {
+		height: 90vh;
+		width: 100%;
+		@include gridCenter;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+		margin: 0 auto;
+		padding: 0 5vw;
+		max-width: 1200px;
+	}
+
+	&__container--left {
+		width: 100%;
+		border-right: 2px solid $light-color;
+		@include gridCenter;
+	}
+
+	&__container--img {
+		height: 90vh;
+		width: 100%;
+	}
+
+	&__container--description {
+		font-size: 1.5rem;
+	}
+
+	&__container--heading span {
+		background: $gradient;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}

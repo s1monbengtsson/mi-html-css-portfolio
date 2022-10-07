@@ -1,0 +1,55 @@
+/* variables */
+
+$primary-color: #151c36;
+$accent-color: #dd491c;
+$light-color: #e4e8e3;
+
+$gradient: -webkit-linear-gradient(left, #ff8232, #ad300a);
+
+$fw-400: 400;
+$fw-600: 600;
+$fw-700: 700;
+
+/* mixins */
+
+@mixin flexCenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin gridCenter {
+	display: grid;
+	justify-items: center;
+	align-items: center;
+}
+
+/* general styling */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: $primary-color;
+	color: $light-color;
+	font-family: "Roboto Mono", monospace;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+span {
+	font-size: 4rem;
+}

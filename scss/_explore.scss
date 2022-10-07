@@ -1,0 +1,44 @@
+.explore {
+	&__container {
+		display: grid;
+		height: 100vh;
+	}
+
+	&__container--heading {
+		height: 20vh;
+		@include flexCenter;
+		@include gradient;
+	}
+
+	&__container--cards {
+		display: grid;
+		height: 80vh;
+		width: 100%;
+		grid-template-areas:
+			".. projects skills about .."
+			".. resume contact  about ..";
+		grid-template-columns: repeat(5, 1fr);
+		grid-template-rows: 1fr 1fr;
+		gap: 2rem;
+	}
+
+	&__projects {
+		grid-area: projects;
+	}
+
+	&__skills {
+		grid-area: skills;
+	}
+
+	&__about {
+		grid-area: about;
+	}
+
+	&__resume {
+		grid-area: resume;
+	}
+
+	&__contact {
+		grid-area: contact;
+	}
+}
