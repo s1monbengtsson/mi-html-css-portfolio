@@ -7,7 +7,12 @@
 	&__container--heading {
 		height: 20vh;
 		@include flexCenter;
-		@include gradient;
+	}
+
+	&__container--heading span {
+		background: $gradient;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 	}
 
 	&__container--cards {
