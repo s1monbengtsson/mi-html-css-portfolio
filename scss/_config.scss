@@ -1,8 +1,8 @@
 /* variables */
 
-$primary-color: #151c36;
-$accent-color: #dd491c;
 $light-color: #e4e8e3;
+$dark-color: #151c36;
+$accent-color: #dd491c;
 
 $gradient: -webkit-linear-gradient(left, #ff8232, #ad300a);
 
@@ -16,6 +16,16 @@ $fw-700: 700;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+@mixin flexCenterX {
+	display: flex;
+	justify-content: center;
+}
+
+@mixin flexColumn {
+	display: flex;
+	flex-direction: column;
 }
 
 @mixin gridCenter {
@@ -33,7 +43,7 @@ $fw-700: 700;
 }
 
 body {
-	background: $primary-color;
+	background: $dark-color;
 	color: $light-color;
 	font-family: "Roboto Mono", monospace;
 }

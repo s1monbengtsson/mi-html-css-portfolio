@@ -1,0 +1,63 @@
+.about {
+	height: 100vh;
+	background-color: $light-color;
+	color: $primary-color;
+
+	&__heading {
+		height: 10vh;
+		@include flexCenterX;
+		padding-top: 3rem;
+	}
+
+	&__heading h2 {
+		font-size: 4rem;
+	}
+}
+
+.cards {
+	height: 90vh;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+	grid-template-areas: ".. ";
+	gap: 1rem;
+
+	&__description {
+		@include flexColumn;
+		align-items: center;
+	}
+
+	&__description--left {
+		grid-column: 2 / 4;
+		grid-row: 2 / 4;
+		border: 1px solid $accent-color;
+	}
+
+	&__description--right {
+		grid-column: 4 / 6;
+		grid-row: 4 / 6;
+		border: 1px solid $accent-color;
+	}
+
+	&__heading {
+		font-size: 2rem;
+	}
+
+	&__img--left {
+		grid-column: 2 / 4;
+		grid-row: 4 / 6;
+		border: 1px solid $accent-color;
+	}
+
+	&__img--right {
+		grid-column: 4 / 6;
+		grid-row: 2 / 4;
+		border: 1px solid $accent-color;
+	}
+
+	&__img img {
+		object-fit: contain;
+		height: 100%;
+		width: 100%;
+	}
+}

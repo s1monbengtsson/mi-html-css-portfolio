@@ -10,22 +10,22 @@
 		max-width: 1200px;
 	}
 
-	&__container--left {
+	&__left {
 		@include flexCenter;
 		flex-direction: column;
 		width: 100%;
 	}
 
-	&__container--img {
+	&__img {
 		height: 90vh;
 		width: 100%;
 	}
 
-	&__container--description {
+	&__description {
 		font-size: 1.5rem;
 	}
 
-	&__container--heading span {
+	&__heading span {
 		background: $gradient;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
