@@ -1,12 +1,12 @@
 .about {
 	height: 100vh;
 	background-color: $light-color;
-	color: $primary-color;
+	color: $dark-color;
 
 	&__heading {
-		height: 10vh;
+		height: 20vh;
 		@include flexCenterX;
-		padding-top: 3rem;
+		align-items: center;
 	}
 
 	&__heading h2 {
@@ -14,45 +14,47 @@
 	}
 }
 
-.cards {
-	height: 90vh;
+.about__cards {
+	height: 80vh;
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
-	grid-template-rows: repeat(6, 1fr);
-	grid-template-areas: ".. ";
-	gap: 1rem;
+	grid-template-rows: repeat(7, 1fr);
 
-	&__description {
+	&__cards__description {
 		@include flexColumn;
 		align-items: center;
 	}
 
 	&__description--left {
 		grid-column: 2 / 4;
-		grid-row: 2 / 4;
-		border: 1px solid $accent-color;
+		grid-row: 1 / 4;
+		// border: 1px solid $accent-color;
 	}
 
 	&__description--right {
 		grid-column: 4 / 6;
-		grid-row: 4 / 6;
-		border: 1px solid $accent-color;
+		grid-row: 4 / 7;
+		// border: 1px solid $accent-color;
 	}
 
 	&__heading {
 		font-size: 2rem;
 	}
 
+	&__content {
+		padding-top: 1rem;
+	}
+
 	&__img--left {
 		grid-column: 2 / 4;
-		grid-row: 4 / 6;
-		border: 1px solid $accent-color;
+		grid-row: 4 / 7;
+		// border: 1px solid $accent-color;
 	}
 
 	&__img--right {
 		grid-column: 4 / 6;
-		grid-row: 2 / 4;
-		border: 1px solid $accent-color;
+		grid-row: 1 / 4;
+		// border: 1px solid $accent-color;
 	}
 
 	&__img img {

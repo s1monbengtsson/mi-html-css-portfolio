@@ -1,10 +1,10 @@
 /* variables */
 
 $light-color: #e4e8e3;
-$dark-color: #151c36;
+$dark-color: #2c3e50;
 $accent-color: #dd491c;
 
-$gradient: -webkit-linear-gradient(left, #ff8232, #ad300a);
+$gradient: -webkit-linear-gradient(left, #2c3e50, #3498db);
 
 $fw-400: 400;
 $fw-600: 600;
@@ -43,8 +43,6 @@ $fw-700: 700;
 }
 
 body {
-	background: $dark-color;
-	color: $light-color;
 	font-family: "Roboto Mono", monospace;
 }
 
