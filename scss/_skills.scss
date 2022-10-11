@@ -16,6 +16,7 @@
 		@include flexCenter;
 		@include flexColumn;
 		box-shadow: 5px 5px 20px 1px black;
+		border-radius: 5px;
 	}
 
 	&__card:hover {
@@ -46,14 +47,17 @@
 		grid-column: 3 / 6;
 		grid-row: 2 / 4;
 	}
+
 	&__card__css {
 		grid-column: 6 / 9;
 		grid-row: 2 / 4;
 	}
+
 	&__card__sass {
 		grid-column: 3 / 6;
 		grid-row: 4 / 6;
 	}
+
 	&__card__js {
 		grid-column: 6 / 9;
 		grid-row: 4 / 6;

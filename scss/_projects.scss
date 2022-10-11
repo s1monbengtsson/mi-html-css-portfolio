@@ -1,0 +1,66 @@
+.projects {
+	height: 100vh;
+	background-color: $light-color;
+
+	&__cards {
+		height: 100vh;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		position: relative;
+	}
+
+	&__card__left {
+		grid-column: 2 / 3;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: repeat(6, 1fr);
+		background-image: url("../images/barbershop_front-page.PNG");
+		background-position: right;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	&__content__left {
+		grid-column: 1 / 2;
+		grid-row: 3 / 5;
+		padding-left: 2rem;
+		color: whitesmoke;
+	}
+
+	&__card__right {
+		grid-column: 1 / 2;
+		grid-row: 2 / 3;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: repeat(6, 1fr);
+		background-image: url("../images/temp_converter_wide.PNG");
+		background-position: left;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	&__content__right {
+		grid-column: 2 / 3;
+		grid-row: 3 / 5;
+		padding-right: 2rem;
+	}
+
+	&__card__center {
+		@include flexCenter;
+		position: absolute;
+		width: 30%;
+		height: 30%;
+		left: 35%;
+		top: 35%;
+		border: 1px solid black;
+		background-color: $light-color;
+	}
+
+	&__content__center span {
+		font-size: 2.5rem;
+		background: $gradient;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
