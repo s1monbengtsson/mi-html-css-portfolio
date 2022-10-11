@@ -1,3 +1,5 @@
+// Styling for projects section
+
 .projects {
 	height: 100vh;
 	background-color: $light-color;
@@ -19,6 +21,23 @@
 		background-position: right;
 		background-repeat: no-repeat;
 		background-size: cover;
+	}
+
+	&__inner {
+		color: white;
+		position: absolute;
+		z-index: 1;
+		opacity: 0;
+		height: 50%;
+		width: 50%;
+		overflow: hidden;
+		background-color: black;
+		@include flexCenter;
+		@include flexColumn;
+	}
+
+	&__inner:hover {
+		opacity: 1;
 	}
 
 	&__content__left {
@@ -49,6 +68,7 @@
 	&__card__center {
 		@include flexCenter;
 		position: absolute;
+		z-index: 2;
 		width: 30%;
 		height: 30%;
 		left: 35%;
