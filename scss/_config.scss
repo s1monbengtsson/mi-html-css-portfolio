@@ -18,6 +18,13 @@ $fw-700: 700;
 	align-items: center;
 }
 
+@mixin flexCenterXY {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 @mixin flexCenterX {
 	display: flex;
 	justify-content: center;
@@ -32,6 +39,21 @@ $fw-700: 700;
 	display: grid;
 	justify-items: center;
 	align-items: center;
+}
+
+@mixin primary-btn {
+	color: $dark-color;
+	border: 1px solid $dark-color;
+	padding: 1rem 2rem;
+	font-weight: $fw-600;
+}
+
+@mixin secondary-btn {
+	background-color: $accent-color;
+	color: $light-color;
+	padding: 1rem 2rem;
+	font-weight: $fw-600;
+	border-radius: 5px;
 }
 
 /* general styling */

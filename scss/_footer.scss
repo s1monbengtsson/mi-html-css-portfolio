@@ -1,0 +1,102 @@
+.footer {
+	background-color: white;
+	height: 65vh;
+	@include flexCenter;
+	position: relative;
+
+	&__container {
+		height: 40vh;
+		background-color: $dark-color;
+		display: flex;
+		align-items: center;
+		width: 100%;
+	}
+
+	&__content {
+		width: 50%;
+		@include flexCenterXY;
+	}
+
+	&__items {
+		list-style: none;
+	}
+
+	&__items:hover {
+		transform: scale(1.5);
+	}
+
+	&__links {
+		text-decoration: none;
+		font-size: 2.5rem;
+		color: $light-color;
+		@include flexCenter;
+	}
+
+	&__icons {
+		font-size: 2.5rem;
+		padding: 0 1rem;
+	}
+
+	&__icons a {
+		text-decoration: none;
+		color: $light-color;
+	}
+
+	&__icons a:hover {
+		transform: scale(1.5);
+	}
+
+	&__card {
+		position: absolute;
+		z-index: 2;
+		background-color: $light-color;
+		box-shadow: 5px 5px 20px black;
+		height: 50vh;
+		width: 40vw;
+		right: 10%;
+	}
+
+	&__form {
+		height: 100%;
+		width: 100%;
+		@include flexColumn;
+		justify-content: center;
+		padding: 1rem;
+	}
+
+	&__form__heading {
+		font-size: 2.5rem;
+		color: $dark-color;
+		margin: 1rem 0;
+	}
+
+	&__btn {
+		@include secondary-btn;
+		border: none;
+		font-family: "Roboto Mono", monospace;
+		font-size: 1.1rem;
+		margin: 1rem 0;
+		cursor: pointer;
+	}
+
+	&__btn:hover {
+		transform: scale(1.1);
+		transition: 0.5s ease;
+	}
+}
+
+.flex__center {
+	@include flexCenter;
+}
+
+input,
+textarea {
+	font-size: 1rem;
+	margin: 1rem 0;
+	padding: 0.5rem;
+	background-color: $light-color;
+	border: none;
+	border-bottom: 2px solid black;
+	font-family: "Roboto Mono", monospace;
+	font-size: 1.1rem;
+}

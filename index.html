@@ -16,6 +16,10 @@
 			href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600;700&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
 	</head>
 	<body>
 		<!-- Header section -->
@@ -24,14 +28,14 @@
 			<nav class="navbar__container">
 				<div class="navbar__logo">S.B</div>
 				<div class="navbar__bars">
-					<span class="material-symbols-outlined"> menu </span>
+					<span class="material-symbols-outlined hamburger"> menu </span>
 				</div>
 				<div class="navbar__menu">
 					<ul>
-						<li><a class="navbar__menu--links" href="#">View Projects</a></li>
-						<li><a class="navbar__menu--links" href="#">Skills</a></li>
+						<li><a class="navbar__menu--links" href="#">Home</a></li>
 						<li><a class="navbar__menu--links" href="#">About Me</a></li>
-						<li><a class="navbar__menu--links" href="#">Resume</a></li>
+						<li><a class="navbar__menu--links" href="#">Skills</a></li>
+						<li><a class="navbar__menu--links" href="#">Projects</a></li>
 						<li><a class="navbar__menu--links" href="#">Contact</a></li>
 					</ul>
 				</div>
@@ -40,7 +44,7 @@
 
 		<!-- Hero section -->
 
-		<main class="hero">
+		<main class="hero" id="hero">
 			<div class="hero__container">
 				<div class="hero__left">
 					<div class="hero__heading">
@@ -64,7 +68,7 @@
 
 		<!-- About section -->
 
-		<section class="about">
+		<section class="about" id="about">
 			<div class="about__container">
 				<div class="about__heading">
 					<h2>This Is Me</h2>
@@ -103,6 +107,8 @@
 							aliquam. Incidunt odit doloremque reiciendis voluptatibus
 							consequuntur?
 						</p>
+
+						<a class="about__btn" href="">Download Resume</a>
 					</div>
 					<div class="about__cards__img about__cards__img--right">
 						<img src="images/coding.svg" alt="macbook" />
@@ -113,7 +119,7 @@
 
 		<!-- Skills section -->
 
-		<section class="skills">
+		<section class="skills" id="skills">
 			<div class="skills__container">
 				<div class="skills__cards">
 					<div class="skills__card__description">
@@ -126,25 +132,25 @@
 					</div>
 
 					<div class="skills__card skills__card__html">
-						<img src="https://img.icons8.com/color/120/000000/html-5--v1.png" />
+						<img src="https://img.icons8.com/color/100/000000/html-5--v1.png" />
 						<h3 class="skills__cards__heading">HTML</h3>
 						<ul class="skills__cards__list">
 							<li class="skills__cards__items">Semantics</li>
 							<li class="skills__cards__items">Box model</li>
-							<li class="skills__cards__items">BEM naming convention</li>
+							<li class="skills__cards__items">BEM</li>
 						</ul>
 					</div>
 					<div class="skills__card skills__card__css">
-						<img src="https://img.icons8.com/color/120/000000/css3.png" />
+						<img src="https://img.icons8.com/color/100/000000/css3.png" />
 						<h3 class="skills__cards__heading">CSS</h3>
 						<ul class="skills__cards__list">
 							<li class="skills__cards__items">Media Queries</li>
-							<li class="skills__cards__items">Custom properties</li>
+							<li class="skills__cards__items">Accessibility</li>
 							<li class="skills__cards__items">Flexbox/Grid</li>
 						</ul>
 					</div>
 					<div class="skills__card skills__card__sass">
-						<img src="https://img.icons8.com/color/120/000000/sass.png" />
+						<img src="https://img.icons8.com/color/100/000000/sass.png" />
 						<h3 class="skills__cards__heading">Sass</h3>
 						<ul class="skills__cards__list">
 							<li class="skills__cards__items">Variables</li>
@@ -153,13 +159,13 @@
 					</div>
 					<div class="skills__card skills__card__js">
 						<img
-							src="https://img.icons8.com/color/120/000000/javascript--v1.png"
+							src="https://img.icons8.com/color/100/000000/javascript--v1.png"
 						/>
 						<h3 class="skills__cards__heading">Javascript</h3>
 						<ul class="skills__cards__list">
-							<li class="skills__cards__items">Coming..</li>
-							<li class="skills__cards__items">Coming..</li>
-							<li class="skills__cards__items">Coming..</li>
+							<li class="skills__cards__items">Variables</li>
+							<li class="skills__cards__items">Conditionals</li>
+							<li class="skills__cards__items">Functions</li>
 						</ul>
 					</div>
 				</div>
@@ -167,13 +173,39 @@
 		</section>
 
 		<!-- Projects section -->
-		<section class="projects">
+		<section class="projects" id="projects">
 			<div class="projects__container">
 				<div class="projects__cards">
-					<div class="projects__card__left">
+					<div class="projects__card__topleft">
+						<span class="material-symbols-outlined question__mark">
+							question_mark
+						</span>
+						<div class="projects__inner">Coming Soon</div>
+					</div>
+					<div class="projects__card__topright">
 						<div class="projects__inner">
-							<h3>Done with</h3>
-							<p>HTML & CSS</p>
+							<h2 class="projects__inner__heading">Design for Barbershop</h2>
+							<h3>Built with</h3>
+							<div class="projects__inner__icons">
+								<img
+									src="https://img.icons8.com/color/100/000000/html-5--v1.png"
+								/>
+								<img src="https://img.icons8.com/color/100/000000/css3.png" />
+							</div>
+							<div class="projects__inner__links">
+								<a
+									href="https://github.com/s1monbengtsson/s1monbengtsson.github.io"
+									target="_blank"
+									class="projects__inner__btn"
+									>Github Repo</a
+								>
+								<a
+									href="https://s1monbengtsson.github.io/"
+									target="_blank"
+									class="projects__inner__btn"
+									>Live Site</a
+								>
+							</div>
 						</div>
 					</div>
 					<div class="projects__card__center">
@@ -182,14 +214,100 @@
 							<p></p>
 						</div>
 					</div>
-					<div class="projects__card__right">
+					<div class="projects__card__bottomleft">
 						<div class="projects__inner">
-							<h3>Done with</h3>
-							<p>HTML, CSS & Javascript</p>
+							<h2 class="projects__inner__heading">Temperature Converter</h2>
+							<h3>Built with</h3>
+							<div class="projects__inner__icons">
+								<img
+									src="https://img.icons8.com/color/100/000000/html-5--v1.png"
+								/>
+								<img src="https://img.icons8.com/color/100/000000/css3.png" />
+								<img
+									src="https://img.icons8.com/color/100/000000/javascript--v1.png"
+								/>
+							</div>
+							<div class="projects__inner__links">
+								<a href="#" target="_blank" class="projects__inner__btn"
+									>Github Repo</a
+								>
+							</div>
 						</div>
+					</div>
+					<div class="projects__card__bottomright">
+						<span class="material-symbols-outlined question__mark">
+							question_mark
+						</span>
+						<div class="projects__inner">Coming Soon</div>
 					</div>
 				</div>
 			</div>
 		</section>
+
+		<!-- Footer section -->
+
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__content">
+					<ul>
+						<li class="footer__items">
+							<a class="footer__links" href="#hero">Home</a>
+						</li>
+						<li class="footer__items">
+							<a class="footer__links" href="#about">About Me</a>
+						</li>
+						<li class="footer__items">
+							<a class="footer__links" href="#skills">Skills</a>
+						</li>
+						<li class="footer__items">
+							<a class="footer__links" href="#projects">Projects</a>
+						</li>
+					</ul>
+					<div class="footer__icons">
+						<a
+							class="fa fa-github"
+							href="https://github.com/s1monbengtsson"
+							target="_blank"
+						></a>
+						<a
+							class="fa fa-linkedin"
+							href="https://www.linkedin.com/in/simon-bengtsson-93253815b/"
+							target="_blank"
+						></a>
+					</div>
+				</div>
+			</div>
+			<div class="footer__card">
+				<form action="" class="footer__form">
+					<h3 class="footer__form__heading">Contact Me</h3>
+
+					<input
+						class="form__input"
+						type="text"
+						placeholder="Enter your name.."
+						id="name"
+					/>
+
+					<input
+						class="form__input"
+						type="email"
+						placeholder="Enter your email address.."
+						id="email"
+					/>
+
+					<textarea
+						class="form__message"
+						name="message"
+						id="message"
+						cols="30"
+						rows="15"
+						placeholder="Message.."
+					></textarea>
+					<div class="footer__btn__wrapper">
+						<button class="footer__btn" type="submit">Submit</button>
+					</div>
+				</form>
+			</div>
+		</footer>
 	</body>
 </html>

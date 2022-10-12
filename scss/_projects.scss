@@ -1,79 +1,65 @@
 // Styling for projects section
 
 .projects {
-	height: 100vh;
+	height: 70vh;
 	background-color: $light-color;
 
 	&__cards {
-		height: 100vh;
+		height: 70vh;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr 1fr;
 		position: relative;
 	}
 
-	&__card__left {
+	&__card__topleft {
+		grid-column: 1 / 2;
+		grid-row: 1 / 2;
+		@include flexCenter;
+	}
+
+	.question__mark {
+		font-size: 7rem;
+	}
+
+	&__card__topright {
 		grid-column: 2 / 3;
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: repeat(6, 1fr);
+		grid-row: 1 / 2;
 		background-image: url("../images/barbershop_front-page.PNG");
 		background-position: right;
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
 
-	&__inner {
-		color: white;
-		position: absolute;
-		z-index: 1;
-		opacity: 0;
-		height: 50%;
-		width: 50%;
-		overflow: hidden;
-		background-color: black;
-		@include flexCenter;
-		@include flexColumn;
-	}
-
-	&__inner:hover {
-		opacity: 1;
-	}
-
-	&__content__left {
-		grid-column: 1 / 2;
-		grid-row: 3 / 5;
-		padding-left: 2rem;
-		color: whitesmoke;
-	}
-
-	&__card__right {
+	&__card__bottomleft {
 		grid-column: 1 / 2;
 		grid-row: 2 / 3;
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: repeat(6, 1fr);
 		background-image: url("../images/temp_converter_wide.PNG");
 		background-position: left;
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
 
-	&__content__right {
+	&__card__bottomright {
 		grid-column: 2 / 3;
-		grid-row: 3 / 5;
-		padding-right: 2rem;
+		grid-row: 2 / 3;
+		@include flexCenter;
+	}
+
+	.question__mark {
+		font-size: 7rem;
 	}
 
 	&__card__center {
 		@include flexCenter;
 		position: absolute;
 		z-index: 2;
-		width: 30%;
-		height: 30%;
-		left: 35%;
-		top: 35%;
+		width: 25%;
+		height: 25%;
+		left: 37.5%;
+		top: 37.5%;
 		border: 1px solid black;
+		box-shadow: 1px 3px 6px black;
 		background-color: $light-color;
 	}
 
@@ -82,5 +68,36 @@
 		background: $gradient;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
+	}
+
+	&__inner {
+		color: $dark-color;
+		background-color: $light-color;
+		position: absolute;
+		z-index: 1;
+		opacity: 0;
+		height: 50%;
+		width: 50%;
+		overflow: hidden;
+		@include flexCenter;
+		@include flexColumn;
+		font-size: 2rem;
+	}
+
+	&__inner__btn {
+		@include primary-btn;
+		text-decoration: none;
+		font-size: 1rem;
+	}
+
+	&__inner__btn:hover {
+		color: $light-color;
+		background-color: $dark-color;
+		transition: 0.3s ease-in-out;
+	}
+
+	&__inner:hover {
+		opacity: 0.95;
+		transition: 0.3s ease-in;
 	}
 }

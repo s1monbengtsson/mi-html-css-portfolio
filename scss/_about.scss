@@ -20,21 +20,17 @@
 	grid-template-columns: repeat(6, 1fr);
 	grid-template-rows: repeat(7, 1fr);
 
-	&__cards__description {
-		@include flexColumn;
-		align-items: center;
-	}
-
 	&__description--left {
 		grid-column: 2 / 4;
 		grid-row: 1 / 4;
-		// border: 1px solid $accent-color;
+		@include flexCenter;
+		@include flexColumn;
 	}
 
 	&__description--right {
 		grid-column: 4 / 6;
 		grid-row: 4 / 7;
-		// border: 1px solid $accent-color;
+		@include flexCenterXY;
 	}
 
 	&__heading {
@@ -62,4 +58,19 @@
 		height: 100%;
 		width: 100%;
 	}
+}
+
+.about__btn {
+	@include secondary-btn;
+	margin-top: 1rem;
+	text-decoration: none;
+	background: linear-gradient(to right, $dark-color 50%, $accent-color 50%);
+	background-size: 200% 100%;
+	background-position: right bottom;
+}
+
+.about__btn:hover {
+	background-position: left;
+	transition: all 1s ease;
+	transform: scale(1.1);
 }

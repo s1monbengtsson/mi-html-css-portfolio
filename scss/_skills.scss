@@ -5,7 +5,7 @@
 	color: $light-color;
 
 	&__cards {
-		height: 100vh;
+		height: 75vh;
 		display: grid;
 		grid-template-columns: 1fr 30% repeat(7, 1fr);
 		grid-template-rows: repeat(6, 1fr);
