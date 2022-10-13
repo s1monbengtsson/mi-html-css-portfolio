@@ -2,6 +2,7 @@
 
 .hero {
 	background-color: whitesmoke;
+
 	&__container {
 		height: 90vh;
 		width: 100%;
@@ -14,9 +15,9 @@
 	}
 
 	&__left {
-		@include flexCenter;
-		flex-direction: column;
+		@include flexCenterXY;
 		width: 100%;
+		color: $dark-color;
 	}
 
 	&__img {
@@ -26,6 +27,7 @@
 
 	&__description {
 		font-size: 1.5rem;
+		color: $dark-color;
 	}
 
 	&__heading span {

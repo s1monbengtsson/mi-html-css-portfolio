@@ -19,12 +19,24 @@
 		-webkit-text-fill-color: transparent;
 	}
 
-	&__menu {
-		display: none;
+	&__items {
+		position: fixed;
+		left: -100%;
+		@include flexCenterX;
+		transition: 0.3s;
+		color: black;
+		z-index: 999;
+	}
+
+	&__items.active {
+		left: 10%;
 	}
 
 	.hamburger {
 		font-size: 3rem;
 		color: black;
+		cursor: pointer;
+		background-color: transparent;
+		border: none;
 	}
 }

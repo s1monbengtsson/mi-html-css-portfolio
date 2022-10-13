@@ -20,6 +20,7 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 		/>
+		<script src="app.js"></script>
 	</head>
 	<body>
 		<!-- Header section -->
@@ -28,9 +29,11 @@
 			<nav class="navbar__container">
 				<div class="navbar__logo">S.B</div>
 				<div class="navbar__bars">
-					<span class="material-symbols-outlined hamburger"> menu </span>
+					<button class="material-symbols-outlined hamburger" id="navbar__btn">
+						menu
+					</button>
 				</div>
-				<div class="navbar__menu">
+				<div class="navbar__items" id="navbar__items">
 					<ul>
 						<li><a class="navbar__menu--links" href="#">Home</a></li>
 						<li><a class="navbar__menu--links" href="#">About Me</a></li>
