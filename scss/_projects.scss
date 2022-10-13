@@ -1,11 +1,11 @@
 // Styling for projects section
 
 .projects {
-	height: 70vh;
+	height: 80vh;
 	background-color: $light-color;
 
 	&__cards {
-		height: 70vh;
+		height: 80vh;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr 1fr;
@@ -26,16 +26,15 @@
 		grid-column: 2 / 3;
 		grid-row: 1 / 2;
 		background-image: url("../images/barbershop_front-page.PNG");
-		background-position: right;
 		background-repeat: no-repeat;
 		background-size: cover;
+		background-position: right;
 	}
 
 	&__card__bottomleft {
 		grid-column: 1 / 2;
 		grid-row: 2 / 3;
-		background-image: url("../images/temp_converter_wide.PNG");
-		background-position: left;
+		background-image: url("../images/temp_converter.PNG");
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
@@ -54,17 +53,22 @@
 		@include flexCenter;
 		position: absolute;
 		z-index: 2;
-		width: 25%;
-		height: 25%;
-		left: 37.5%;
-		top: 37.5%;
+		width: 15%;
+		height: 20%;
+		left: 42.5%;
+		top: 40%;
 		border: 1px solid black;
 		box-shadow: 1px 3px 6px black;
 		background-color: $light-color;
 	}
 
+	&__content__center {
+		@include flexCenterXY;
+	}
+
 	&__content__center span {
 		font-size: 2.5rem;
+		font-weight: $fw-700;
 		background: $gradient;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
@@ -99,5 +103,45 @@
 	&__inner:hover {
 		opacity: 0.95;
 		transition: 0.3s ease-in;
+	}
+
+	@media screen and (max-width: 1055px) {
+		&__inner__btn {
+			padding: 1rem;
+		}
+	}
+
+	@media screen and (max-width: 900px) {
+		&__card__center {
+			height: 15%;
+			top: 42.5%;
+		}
+		&__content__center span {
+			font-size: 2rem;
+		}
+
+		&__inner h2 {
+			font-size: 1.5rem;
+		}
+
+		&__inner h3 {
+			font-size: 1.2rem;
+		}
+
+		&__inner__icons {
+			height: 75px;
+			display: flex;
+			justify-content: center;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		.projects {
+			height: 150vh;
+		}
+		&__cards {
+			display: flex;
+			position: static;
+		}
 	}
 }

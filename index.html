@@ -26,30 +26,31 @@
 		<!-- Header section -->
 
 		<header class="navbar">
-			<nav class="navbar__container">
+			<div class="navbar__container">
 				<div class="navbar__logo">S.B</div>
-				<div class="navbar__bars">
-					<button class="material-symbols-outlined hamburger" id="navbar__btn">
-						menu
-					</button>
-				</div>
-				<div class="navbar__items" id="navbar__items">
+				<button class="navbar__btn" id="navbar__btn">
+					<span class="material-symbols-outlined hamburger"> menu </span>
+				</button>
+
+				<nav class="navbar__items" id="navbar__items">
 					<ul>
-						<li><a class="navbar__menu--links" href="#">Home</a></li>
-						<li><a class="navbar__menu--links" href="#">About Me</a></li>
-						<li><a class="navbar__menu--links" href="#">Skills</a></li>
-						<li><a class="navbar__menu--links" href="#">Projects</a></li>
-						<li><a class="navbar__menu--links" href="#">Contact</a></li>
+						<li><a class="navbar__menu__links" href="#hero">Home</a></li>
+						<li><a class="navbar__menu__links" href="#about">About</a></li>
+						<li><a class="navbar__menu__links" href="#skills">Skills</a></li>
+						<li>
+							<a class="navbar__menu__links" href="#projects">Projects</a>
+						</li>
+						<li><a class="navbar__menu__links" href="#contact">Contact</a></li>
 					</ul>
-				</div>
-			</nav>
+				</nav>
+			</div>
 		</header>
 
 		<!-- Hero section -->
 
 		<main class="hero" id="hero">
 			<div class="hero__container">
-				<div class="hero__left">
+				<div class="hero__content">
 					<div class="hero__heading">
 						<h1>Hi! I am <span>Simon...</span></h1>
 					</div>
@@ -57,15 +58,6 @@
 						<p>and I like to build cool stuff on the web</p>
 					</div>
 				</div>
-				<div class="hero__right">
-					<img
-						class="hero__img"
-						src="images/Developer(2).svg"
-						alt="person coding"
-					/>
-				</div>
-
-				<i class="fa-solid fa-circle-arrow-down"></i>
 			</div>
 		</main>
 
@@ -136,40 +128,48 @@
 
 					<div class="skills__card skills__card__html">
 						<img src="https://img.icons8.com/color/100/000000/html-5--v1.png" />
-						<h3 class="skills__cards__heading">HTML</h3>
-						<ul class="skills__cards__list">
-							<li class="skills__cards__items">Semantics</li>
-							<li class="skills__cards__items">Box model</li>
-							<li class="skills__cards__items">BEM</li>
-						</ul>
+						<div class="skills__card__text--wrapper">
+							<h3 class="skills__cards__heading">.html</h3>
+							<ul class="skills__cards__list">
+								<li class="skills__cards__items">Semantics</li>
+								<li class="skills__cards__items">Box model</li>
+								<li class="skills__cards__items">BEM</li>
+							</ul>
+						</div>
 					</div>
 					<div class="skills__card skills__card__css">
 						<img src="https://img.icons8.com/color/100/000000/css3.png" />
-						<h3 class="skills__cards__heading">CSS</h3>
-						<ul class="skills__cards__list">
-							<li class="skills__cards__items">Media Queries</li>
-							<li class="skills__cards__items">Accessibility</li>
-							<li class="skills__cards__items">Flexbox/Grid</li>
-						</ul>
+						<div class="skills__card__text--wrapper">
+							<h3 class="skills__cards__heading">.css</h3>
+							<ul class="skills__cards__list">
+								<li class="skills__cards__items">Media Queries</li>
+								<li class="skills__cards__items">Accessibility</li>
+								<li class="skills__cards__items">Flexbox/Grid</li>
+							</ul>
+						</div>
 					</div>
 					<div class="skills__card skills__card__sass">
 						<img src="https://img.icons8.com/color/100/000000/sass.png" />
-						<h3 class="skills__cards__heading">Sass</h3>
-						<ul class="skills__cards__list">
-							<li class="skills__cards__items">Variables</li>
-							<li class="skills__cards__items">Mixins</li>
-						</ul>
+						<div class="skills__card__text--wrapper">
+							<h3 class="skills__cards__heading">.scss</h3>
+							<ul class="skills__cards__list">
+								<li class="skills__cards__items">Variables</li>
+								<li class="skills__cards__items">Mixins</li>
+							</ul>
+						</div>
 					</div>
 					<div class="skills__card skills__card__js">
 						<img
 							src="https://img.icons8.com/color/100/000000/javascript--v1.png"
 						/>
-						<h3 class="skills__cards__heading">Javascript</h3>
+						<div class="skills__card__text--wrapper">
+						<h3 class="skills__cards__heading">.js</h3>
 						<ul class="skills__cards__list">
 							<li class="skills__cards__items">Variables</li>
 							<li class="skills__cards__items">Conditionals</li>
 							<li class="skills__cards__items">Functions</li>
 						</ul>
+						<div class="skills__card__text--wrapper"></div>
 					</div>
 				</div>
 			</div>
@@ -213,11 +213,12 @@
 					</div>
 					<div class="projects__card__center">
 						<div class="projects__content__center">
-							<h2>My <span>Projects</span></h2>
-							<p></p>
+							<h2>My</h2>
+							<span>Work</span>
 						</div>
 					</div>
 					<div class="projects__card__bottomleft">
+			
 						<div class="projects__inner">
 							<h2 class="projects__inner__heading">Temperature Converter</h2>
 							<h3>Built with</h3>
@@ -249,7 +250,7 @@
 
 		<!-- Footer section -->
 
-		<footer class="footer">
+		<footer class="footer" id="contact">
 			<div class="footer__container">
 				<div class="footer__content">
 					<ul>
@@ -312,5 +313,6 @@
 				</form>
 			</div>
 		</footer>
+		<p>Image by Freepik</p>
 	</body>
 </html>

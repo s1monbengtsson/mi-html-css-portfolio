@@ -1,6 +1,6 @@
 // Sheet for variables, mixins and general styling
 
-$light-color: #e4e8e3;
+$light-color: #e3e0e1;
 $dark-color: #2c3e50;
 $accent-color: #dd491c;
 
@@ -18,16 +18,16 @@ $fw-700: 700;
 	align-items: center;
 }
 
+@mixin flexCenterY {
+	display: flex;
+	align-items: center;
+}
+
 @mixin flexCenterXY {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-}
-
-@mixin flexCenterX {
-	display: flex;
-	justify-content: center;
 }
 
 @mixin flexColumn {

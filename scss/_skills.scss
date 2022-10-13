@@ -72,4 +72,27 @@
 	&__cards__items {
 		list-style-image: url("../images/check-solid.svg");
 	}
+
+	@media screen and (max-width: 768px) {
+		&__cards {
+			@include flexCenterXY;
+			height: 140vh;
+			margin: 0 2rem;
+		}
+
+		&__card {
+			width: 60%;
+			height: 15%;
+			margin: 1rem 0;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+		}
+	}
+
+	@media screen and (max-width: 550px) {
+		&__card {
+			width: 90%;
+		}
+	}
 }
