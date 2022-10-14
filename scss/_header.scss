@@ -1,6 +1,7 @@
 // Styling for header section
 
 .navbar {
+	height: 10vh;
 	&__container {
 		width: 100%;
 		@include flexCenterY;
@@ -22,9 +23,10 @@
 
 	&__items {
 		width: 100%;
+		height: 100%;
 	}
 
-	&__items ul {
+	&__menu {
 		display: flex;
 		justify-content: flex-end;
 		list-style: none;
@@ -48,6 +50,7 @@
 	@media screen and (max-width: 768px) {
 		&__container {
 			justify-content: space-between;
+			position: relative;
 		}
 		&__items {
 			display: none;
@@ -57,10 +60,42 @@
 			display: block;
 			border: none;
 			background: none;
+			cursor: pointer;
+			position: absolute;
+			right: 5%;
+		}
+
+		&__items {
+			display: flex;
+		}
+
+		&__menu {
+			@include flexCenterXY;
+			justify-content: space-evenly;
+			background-color: white;
+			position: absolute;
+			width: 100%;
+			top: 10vh;
+			left: -100%;
+			opacity: 0;
+			transition: all 0.5s ease;
 		}
 
 		.hamburger {
 			font-size: 3rem;
+		}
+
+		&__menu__links {
+			color: $dark-color;
+			font-size: 2rem;
+			font-weight: $fw-700;
+		}
+
+		&__menu.active {
+			left: 0;
+			opacity: 1;
+			transition: all 0.5s ease;
+			height: 90vh;
 		}
 	}
 

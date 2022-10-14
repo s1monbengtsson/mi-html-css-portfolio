@@ -1,8 +1,8 @@
-// Creating variables for hamburger menu
+window.onload = function () {
+	const menu = document.querySelector('.navbar__btn');
+	const menuLinks = document.querySelector('.navbar__menu');
 
-// const navBtn = document.querySelector("#navbar__btn");
-// const navMenu = document.querySelector("#navbar__items");
-
-// navBtn.addEventListener("click", () => {
-// 	navMenu.addEventListener.toggle("active");
-// });
+	menu.addEventListener('click', () => {
+		menuLinks.classList.toggle('active');
+	});
+};

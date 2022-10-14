@@ -76,7 +76,7 @@
 	}
 
 	&__cards__items {
-		list-style-image: url("../images/check-solid.svg");
+		list-style-image: url('../images/check-solid.svg');
 	}
 
 	@media screen and (max-width: 768px) {
@@ -99,9 +99,8 @@
 		}
 
 		&__card {
-			width: 60%;
-			height: 15%;
 			margin: 1rem 0;
+			padding: 1rem;
 			display: flex;
 			flex-direction: row;
 			justify-content: space-evenly;
