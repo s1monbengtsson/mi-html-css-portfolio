@@ -3,12 +3,15 @@
 .projects {
 	height: 80vh;
 	background-color: $light-color;
+	@media screen and (max-width: 768px) {
+		height: 150vh;
+	}
 
 	&__cards {
 		height: 80vh;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr;
+		grid-template-rows: 50% 50%;
 		position: relative;
 	}
 
@@ -16,6 +19,7 @@
 		grid-column: 1 / 2;
 		grid-row: 1 / 2;
 		@include flexCenter;
+		position: relative;
 	}
 
 	.question__mark {
@@ -25,24 +29,32 @@
 	&__card__topright {
 		grid-column: 2 / 3;
 		grid-row: 1 / 2;
-		background-image: url("../images/barbershop_front-page.PNG");
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: right;
+		position: relative;
+	}
+
+	&__card__topright > img {
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
 	}
 
 	&__card__bottomleft {
 		grid-column: 1 / 2;
 		grid-row: 2 / 3;
-		background-image: url("../images/temp_converter.PNG");
-		background-repeat: no-repeat;
-		background-size: cover;
+		position: relative;
+	}
+
+	&__card__bottomleft > img {
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
 	}
 
 	&__card__bottomright {
 		grid-column: 2 / 3;
 		grid-row: 2 / 3;
 		@include flexCenter;
+		position: relative;
 	}
 
 	.question__mark {
@@ -80,12 +92,17 @@
 		position: absolute;
 		z-index: 1;
 		opacity: 0;
-		height: 50%;
-		width: 50%;
+		height: 100%;
+		width: 100%;
 		overflow: hidden;
 		@include flexCenter;
 		@include flexColumn;
 		font-size: 2rem;
+	}
+
+	&__inner:hover {
+		opacity: 0.95;
+		transition: 0.3s ease-in;
 	}
 
 	&__inner__btn {
@@ -98,11 +115,6 @@
 		color: $light-color;
 		background-color: $dark-color;
 		transition: 0.3s ease-in-out;
-	}
-
-	&__inner:hover {
-		opacity: 0.95;
-		transition: 0.3s ease-in;
 	}
 
 	@media screen and (max-width: 1055px) {
@@ -136,12 +148,50 @@
 	}
 
 	@media screen and (max-width: 768px) {
-		.projects {
-			height: 150vh;
-		}
 		&__cards {
-			display: flex;
+			height: 150vh;
+			@include flexCenterXY;
+			justify-content: space-around;
+			width: 100%;
+		}
+
+		&__card__topleft {
+			display: none;
+		}
+
+		&__card__topright {
+			height: 40%;
+			width: 100vw;
+		}
+
+		&__card__bottomleft {
+			height: 40%;
+			width: 100vw;
+		}
+
+		&__card__bottomright {
+			display: none;
+		}
+
+		&__card__center {
 			position: static;
+			width: 100%;
+			display: flex;
+			border: none;
+			box-shadow: none;
+		}
+
+		&__card__center span {
+			padding-left: 0.5rem;
+		}
+
+		&__content__center {
+			@include flexCenter;
+			flex-direction: row;
+		}
+
+		&__inner {
+			opacity: 0.9;
 		}
 	}
 }

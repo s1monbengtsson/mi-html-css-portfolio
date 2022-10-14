@@ -3,6 +3,9 @@
 .skills {
 	background-color: $dark-color;
 	color: $light-color;
+	@media screen and (max-width: 768px) {
+		height: 150vh;
+	}
 
 	&__cards {
 		height: 75vh;
@@ -10,6 +13,9 @@
 		grid-template-columns: 1fr 30% repeat(7, 1fr);
 		grid-template-rows: repeat(6, 1fr);
 		gap: 1rem;
+		@media screen and (max-width: 768px) {
+			height: 150vh;
+		}
 	}
 
 	&__card {
@@ -74,10 +80,22 @@
 	}
 
 	@media screen and (max-width: 768px) {
+		&__container {
+			height: 90%;
+			padding-top: 3rem;
+		}
 		&__cards {
 			@include flexCenterXY;
-			height: 140vh;
 			margin: 0 2rem;
+			height: 100%;
+		}
+
+		&__heading {
+			font-size: 2.5rem;
+		}
+
+		&__heading span {
+			font-size: 3rem;
 		}
 
 		&__card {
@@ -93,6 +111,24 @@
 	@media screen and (max-width: 550px) {
 		&__card {
 			width: 90%;
+		}
+	}
+
+	@media screen and (min-height: 1150px) {
+		&__para {
+			font-size: 1.5rem;
+		}
+		&__cards img {
+			height: 120px;
+			width: 120px;
+		}
+
+		&__cards__heading {
+			font-size: 3.5rem;
+		}
+
+		&__cards__items {
+			font-size: 1.5rem;
 		}
 	}
 }

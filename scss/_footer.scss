@@ -5,6 +5,10 @@
 	height: 65vh;
 	@include flexCenter;
 	position: relative;
+	@media screen and (max-width: 700px) {
+		display: block;
+		height: 150vh;
+	}
 
 	&__container {
 		height: 40vh;
@@ -85,20 +89,62 @@
 		transform: scale(1.1);
 		transition: 0.5s ease;
 	}
-}
 
-.flex__center {
-	@include flexCenter;
-}
+	@media screen and (max-width: 950px) {
+		&__card {
+			width: 40vw;
+		}
+	}
 
-input,
-textarea {
-	font-size: 1rem;
-	margin: 1rem 0;
-	padding: 0.5rem;
-	background-color: $light-color;
-	border: none;
-	border-bottom: 2px solid black;
-	font-family: "Roboto Mono", monospace;
-	font-size: 1.1rem;
+	@media screen and (max-width: 768px) {
+		&__links,
+		&__icons {
+			font-size: 2rem;
+		}
+
+		input,
+		textarea {
+			font-size: 1rem;
+		}
+	}
+
+	@media screen and (max-width: 700px) {
+		&__container {
+			width: 100%;
+			height: 50%;
+		}
+
+		&__content {
+			@include flexCenterXY;
+			width: 100%;
+			height: 100%;
+		}
+
+		&__card {
+			display: block;
+			position: static;
+			width: 100%;
+			height: 50%;
+		}
+
+		&__links {
+			padding: 1.5rem;
+		}
+	}
+
+	.flex__center {
+		@include flexCenter;
+	}
+
+	input,
+	textarea {
+		font-size: 1rem;
+		margin: 1rem 0;
+		padding: 0.5rem;
+		background-color: $light-color;
+		border: none;
+		border-bottom: 2px solid black;
+		font-family: "Roboto Mono", monospace;
+		font-size: 1.1rem;
+	}
 }

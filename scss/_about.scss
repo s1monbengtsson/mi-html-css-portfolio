@@ -2,6 +2,17 @@
 	height: 100vh;
 	background-color: $light-color;
 	color: $dark-color;
+	@media screen and (max-width: 768px) {
+		height: 160vh;
+	}
+	// iPhone SE
+	@media screen and (max-height: 700px) {
+		height: 200vh;
+	}
+	// iPads
+	@media screen and (min-height: 1200px) {
+		height: 120vh;
+	}
 
 	&__heading {
 		height: 20vh;
@@ -74,20 +85,19 @@
 }
 
 @media screen and (max-width: 768px) {
-	.about {
-		height: 140vh;
-
-		&__heading h2 {
-			font-size: 2.5rem;
-		}
+	.about__container {
+		height: 90%;
+	}
+	.about__heading h2 {
+		font-size: 2.5rem;
 	}
 	.about__cards {
-		height: 120vh;
-		gap: 1.5rem;
+		height: 90%;
+		gap: 1rem;
+	}
 
-		&__heading {
-			font-size: 1.5rem;
-		}
+	.about__heading {
+		font-size: 1.5rem;
 	}
 }
 
@@ -107,8 +117,31 @@
 	}
 }
 
-@media screen and (max-width: 450px) {
-	.about {
-		height: 150vh;
+@media screen and (min-width: 1450px) {
+	.about__container {
+		height: 100%;
+	}
+
+	.about__cards {
+		height: 100vh;
+	}
+}
+
+@media screen and (min-height: 1150px) {
+	.about__cards {
+		height: 70vh;
+	}
+
+	.about__cards__heading {
+		font-size: 3rem;
+	}
+
+	.about__cards__content {
+		font-size: 1.5rem;
+	}
+
+	.about__btn {
+		@include secondary-btn;
+		font-size: 2rem;
 	}
 }
