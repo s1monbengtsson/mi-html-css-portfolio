@@ -1,10 +1,14 @@
 // Sheet for variables, mixins and general styling
 
-$light-color: #e3e0e1;
-$dark-color: #2c3e50;
-$accent-color: #dd491c;
+// color palette from https://coolors.co/palettes/trending
 
-$gradient: -webkit-linear-gradient(left, #2c3e50, #3498db);
+$light-color: #e3e0e1;
+$dark-color: #252422;
+$accent-color: #ee6c4d;
+
+$gradient: -webkit-linear-gradient(left, #ee6c4d, #f83600);
+
+// font-weights
 
 $fw-400: 400;
 $fw-600: 600;
@@ -65,7 +69,7 @@ $fw-700: 700;
 }
 
 body {
-	font-family: "Roboto Mono", monospace;
+	font-family: 'Roboto Mono', monospace;
 }
 
 h1 {

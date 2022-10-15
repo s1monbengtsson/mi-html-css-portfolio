@@ -213,8 +213,8 @@ span {
 	align-items: center;
 }
 .about__img {
-	aspect-ratio: 1;
-	width: 70%;
+	height: 70%;
+	width: 80%;
 	box-shadow: 5px 5px 30px #252422;
 }
 @media screen and (max-width: 950px) {
@@ -283,9 +283,6 @@ span {
 	flex-direction: column;
 	box-shadow: 5px 5px 20px 1px #000;
 	border-radius: 5px;
-}
-.skills__card img {
-	aspect-ratio: 1;
 }
 .skills__card:hover {
 	transform: scale(1.05);
@@ -714,4 +711,4 @@ span {
 	border-bottom: 2px solid #000;
 	font-family: 'Roboto Mono', monospace;
 	font-size: 1.1rem;
-} /*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=styles.css.map */

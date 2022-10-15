@@ -1,0 +1,8 @@
+_config contains all Sass variables, mixins and general styling for the page
+
+main.scss contains @imports from all partials
+
+main.css contains all the comprimized css
+
+All sections of the page has a partial where all the styling for that specific part of the page goes.
+In each partial you can find styling + media queries
