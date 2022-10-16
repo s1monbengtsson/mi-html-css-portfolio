@@ -83,9 +83,14 @@
 	}
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 780px) {
 	.about {
-		height: 150vh;
+		height: 110vh;
+
+		&__img {
+			height: 80%;
+			width: 70%;
+		}
 	}
 }
 
@@ -95,8 +100,8 @@
 	}
 }
 
-@media screen and (max-height: 800px) {
+@media screen and (max-height: 700px) {
 	.about {
-		height: 100vh;
+		height: 120vh;
 	}
 }
