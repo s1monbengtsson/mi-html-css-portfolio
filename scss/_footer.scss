@@ -2,7 +2,7 @@
 
 .footer {
 	background-color: white;
-	height: 65vh;
+	height: 80vh;
 	@include flexCenter;
 	position: relative;
 	@media screen and (max-width: 700px) {
@@ -11,7 +11,7 @@
 	}
 
 	&__container {
-		height: 40vh;
+		height: 50vh;
 		background-color: $dark-color;
 		display: flex;
 		align-items: center;
@@ -57,7 +57,7 @@
 		z-index: 2;
 		background-color: $light-color;
 		box-shadow: 5px 5px 20px black;
-		height: 50vh;
+		height: 65vh;
 		width: 35vw;
 		right: 10%;
 	}
@@ -79,7 +79,7 @@
 	&__btn {
 		@include secondary-btn;
 		border: none;
-		font-family: "Roboto Mono", monospace;
+		font-family: 'Roboto Mono', monospace;
 		font-size: 1.1rem;
 		margin: 1rem 0;
 		cursor: pointer;
@@ -144,7 +144,7 @@
 		background-color: $light-color;
 		border: none;
 		border-bottom: 2px solid black;
-		font-family: "Roboto Mono", monospace;
+		font-family: 'Roboto Mono', monospace;
 		font-size: 1.1rem;
 	}
 }

@@ -3,12 +3,13 @@
 .skills {
 	background-color: $dark-color;
 	color: $light-color;
+	height: 110vh;
 	@media screen and (max-width: 768px) {
 		height: 150vh;
 	}
 
 	&__cards {
-		height: 75vh;
+		height: 110vh;
 		display: grid;
 		grid-template-columns: 1fr 30% repeat(7, 1fr);
 		grid-template-rows: repeat(6, 1fr);
